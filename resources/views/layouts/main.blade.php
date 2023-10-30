@@ -18,9 +18,9 @@
 <div class="wrapper">
 
     <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
-        <p class="animation__shake">GREENSHOP</p>
-    </div>
+{{--    <div class="preloader flex-column justify-content-center align-items-center">--}}
+{{--        <p class="animation__shake">GREENSHOP</p>--}}
+{{--    </div>--}}
 
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -80,6 +80,12 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
+                        <a href="{{ route('main.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-house-user" style="color: #c7c8d0;"></i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="pages/gallery.html" class="nav-link">
                             <i class="nav-icon fas fa-shopping-bag" style="color: #c2c7d0;"></i>
                             <p>Orders</p>
@@ -98,13 +104,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/gallery.html" class="nav-link">
+                        <a href="{{ route('tag.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-tags" style="color: #c2c7d0;"></i>
                             <p>Tags</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/gallery.html" class="nav-link">
+                        <a href="{{ route('size.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-tape" style="color: #c2c7d0;"></i>
                             <p>Sizes</p>
                         </a>
